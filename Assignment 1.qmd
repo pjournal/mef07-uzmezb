@@ -181,7 +181,7 @@ The plotting of a multiple time series object is straightforward. Let\'s load th
 
     ts_plot(Coffee_Prices)
 
-![](images/newplot-5-01.png)
+![](images/paste-053455DB.png)
 
 By default, the function will plot all the series in one plot. Plotting the different series on a separate plot can be done by setting the `type` argument to `multiple`:
 
@@ -192,7 +192,7 @@ By default, the function will plot all the series in one plot. Plotting the diff
 
 Coffee_PricesRobusta Arabica
 
-![](images/newplot-4.png)
+![](images/paste-97BDCC03.png)
 
 [Time Series Data](https://cran.rstudio.com/web/packages/TSstudio/vignettes/Plotting_Time_Series.html)
 
