@@ -1,16 +1,22 @@
 ---
-title: "Assignment1"
-format: html
+title: "Assignment 1"
+author: "Bengu Uzmez"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 1
+    number_sections: true
 editor: visual
 ---
 
 ## **Bengü Üzmez**
 
-Hello, I\'m Bengü Üzmez.
+Hello, I'm Bengü Üzmez.
 
-I\'m working at Hopi as Partnership Executive. I really into matchmaking for companies. I would move to new country soon so I want to create new opportunities with data science.
+I'm working at Hopi as Partnership Executive. I really into matchmaking for companies. I would move to new country soon so I want to create new opportunities with data science.
 
-It\'s my Linkedin Profile, It would be great if you give me any tips about business.
+It's my Linkedin Profile, It would be great if you give me any tips about business.
 
 <https://www.linkedin.com/in/benguzmez/>
 
@@ -32,7 +38,7 @@ from shiny import App, ui
 
 from shiny import App, ui
 
-app_ui = ui.page_fluid( ui.input_slider(\"n\", \"Choose a number n:\", 0, 100, 40), ui.output_text_verbatim(\"txt\") )
+app_ui = ui.page_fluid( ui.input_slider("n", "Choose a number n:", 0, 100, 40), ui.output_text_verbatim("txt") )
 
 def server(input, output, session): ...
 
@@ -42,7 +48,7 @@ Note the two new UI pieces added:
 
 -   `input_slider()` creates a slider.
 
--   `output_text_verbatim()` creates a field to display dynamically generated text. There\'s no text yet, but we\'ll add it next.
+-   `output_text_verbatim()` creates a field to display dynamically generated text. There's no text yet, but we'll add it next.
 
 With this code you can create a slider to choose number betwwen 40-100. Good option for making more creative.
 
@@ -50,13 +56,13 @@ With this code you can create a slider to choose number betwwen 40-100. Good opt
 
 ## **Survival of passengers on the Titanic**
 
-Titanic is one of the great dataset for beginning the learn analyze skills. There are many category to analyze dataset. You can select data between spesific age and show with graph easily.I used to work on this data set before and I\'m still recognize.
+Titanic is one of the great dataset for beginning the learn analyze skills. There are many category to analyze dataset. You can select data between spesific age and show with graph easily.I used to work on this data set before and I'm still recognize.
 
 There are some quote from web:
 
 ### **Description**
 
-This data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner \'Titanic\', summarized according to economic status (class), sex, age and survival.
+This data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner 'Titanic', summarized according to economic status (class), sex, age and survival.
 
 ### **Usage**
 
@@ -73,13 +79,13 @@ A 4-dimensional array resulting from cross-tabulating 2201 observations on 4 var
 |  3  | Age       | Child, Adult        |
 |  4  | Survived  | No, Yes             |
 
-Due in particular to the very successful film \'Titanic\', the last years saw a rise in public interest in the Titanic. Very detailed data about the passengers is now available on the Internet, at sites such as *Encyclopedia Titanica* (<https://www.encyclopedia-titanica.org/>).
+Due in particular to the very successful film 'Titanic', the last years saw a rise in public interest in the Titanic. Very detailed data about the passengers is now available on the Internet, at sites such as *Encyclopedia Titanica* (<https://www.encyclopedia-titanica.org/>).
 
 ### **Source**
 
-Dawson, Robert J. MacG. (1995), The \'Unusual Episode\' Data Revisited. *Journal of Statistics Education*, **3**.[doi:10.1080/10691898.1995.11910499](https://doi.org/10.1080/10691898.1995.11910499).The source provides a data set recording class, sex, age, and survival status for each person on board of the Titanic, and is based on data originally collected by the British Board of Trade and reprinted in:
+Dawson, Robert J. MacG. (1995), The 'Unusual Episode' Data Revisited. *Journal of Statistics Education*, **3**.[doi:10.1080/10691898.1995.11910499](https://doi.org/10.1080/10691898.1995.11910499).The source provides a data set recording class, sex, age, and survival status for each person on board of the Titanic, and is based on data originally collected by the British Board of Trade and reprinted in:
 
-British Board of Trade (1990), *Report on the Loss of the \'Titanic\' (S.S.)*. British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.
+British Board of Trade (1990), *Report on the Loss of the 'Titanic' (S.S.)*. British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.
 
 ### **Examples**
 
@@ -107,7 +113,7 @@ gallery focuses on it so almost every section there starts with `ggplot2`exampl
 \
 This page is dedicated to general `ggplot2` tips that you can apply to any chart, like customizing a title, adding annotation, or using faceting.
 
-If you\'re new to `ggplot2`, a good starting point is probably this [online course](https://datacamp.pxf.io/za2ZAO).
+If you're new to `ggplot2`, a good starting point is probably this [online course](https://datacamp.pxf.io/za2ZAO).
 
 ![](https://r-graph-gallery.com/img/other/ggplot2Hex.jpg)
 
@@ -117,9 +123,9 @@ If you\'re new to `ggplot2`, a good starting point is probably this [online co
 
 **Data cleaning** refers to the process of transforming [raw data](https://www.statology.org/raw-data/) into data that is suitable for analysis or model-building.
 
-In most cases, \"cleaning\" a dataset involves dealing with missing values and duplicated data.
+In most cases, "cleaning" a dataset involves dealing with missing values and duplicated data.
 
-Here are the most common ways to \"clean\" a dataset in R:
+Here are the most common ways to "clean" a dataset in R:
 
 **Method 1: Remove Rows with Missing Values**
 
@@ -169,7 +175,7 @@ The following examples show how to use each of these methods in practice with th
 
 ## ***Plotting multiple time series object***
 
-The plotting of a multiple time series object is straightforward. Let\'s load the `Coffee_Prices` an `mts` object that represents the monthly prices of the Robusta and Arabica coffee prices (USD per Kg.):
+The plotting of a multiple time series object is straightforward. Let's load the `Coffee_Prices` an `mts` object that represents the monthly prices of the Robusta and Arabica coffee prices (USD per Kg.):
 
     data("Coffee_Prices")
 
