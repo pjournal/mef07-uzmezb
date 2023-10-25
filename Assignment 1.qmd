@@ -1,0 +1,201 @@
+---
+title: "NEW"
+format: html
+editor: visual
+---
+
+## Bengü Üzmez
+
+I'm Bengü Üzmez.
+
+I'm working at Hopi as Partnership Executive. I really into matchmaking for companies. I would move to new country soon so I want to create new opportunities with data science.
+
+It's my Linkedin Profile, It would be great if you give me any tip about business:)
+
+<https://www.linkedin.com/in/benguzmez/>
+
+<https://quarto.org>.
+
+## **Getting Started with Shiny for Python**
+
+Shiny makes it easy to build web applications with Python code. It enables you to customize the layout and style of your application and dynamically respond to events, such as a button press, or dropdown selection. The examples on this site are rendered in the browser using [Pyodide](https://shiny.posit.co/py/docs/shinylive.html), but you can also [install shiny](https://shiny.posit.co/py/docs/install.html) to use it with your own projects.
+
+If you have experience with the [Shiny for R](https://shiny.posit.co/r/articles/), we recommend starting with the [quickstart](https://shiny.posit.co/py/docs/comp-r-shiny.html) to learn the main differences between Shiny for R and Shiny for Python.
+
+Shiny applications consist of two parts: the **user interface** (or **UI**), and the **server** function. These are combined using a `shiny.App`{spellcheck="false"} object.
+
+This is shown in the interactive example below.
+
+from shiny import App, ui
+
+### Adding UI inputs and output
+
+from shiny import App, ui
+
+app_ui = ui.page_fluid( ui.input_slider("n", "Choose a number n:", 0, 100, 40), ui.output_text_verbatim("txt") )
+
+def server(input, output, session): ...
+
+app = App(app_ui, server)
+
+Note the two new UI pieces added:
+
+-   `input_slider()`{spellcheck="false"} creates a slider.
+
+-   `output_text_verbatim()`{spellcheck="false"} creates a field to display dynamically generated text. There's no text yet, but we'll add it next.
+
+With this code you can create a slider to choose number betwwen 40-100. Good option for making more creative.
+
+[Link](https://www.youtube.com/watch?v=--1edVmpF94&list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW&index=10)
+
+## Survival of passengers on the Titanic
+
+Titanic is one of the great dataset for beginning the learn analyze skills. There are many category to analyze dataset. You can select data between spesific age and show with graph easily.I used to work on this data set before and I'm still recognize.
+
+There are some quote from web:
+
+### Description
+
+This data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner 'Titanic', summarized according to economic status (class), sex, age and survival.
+
+### Usage
+
+    Titanic
+
+### Format
+
+A 4-dimensional array resulting from cross-tabulating 2201 observations on 4 variables. The variables and their levels are as follows:
+
+| No  | Name      | Levels              |
+|----:|:----------|:--------------------|
+|  1  | Class     | 1st, 2nd, 3rd, Crew |
+|  2  | Sex       | Male, Female        |
+|  3  | Age       | Child, Adult        |
+|  4  | Survived  | No, Yes             |
+
+Due in particular to the very successful film 'Titanic', the last years saw a rise in public interest in the Titanic. Very detailed data about the passengers is now available on the Internet, at sites such as *Encyclopedia Titanica* (<https://www.encyclopedia-titanica.org/>).
+
+### Source
+
+Dawson, Robert J. MacG. (1995), The 'Unusual Episode' Data Revisited. *Journal of Statistics Education*, **3**.[doi:10.1080/10691898.1995.11910499](https://doi.org/10.1080/10691898.1995.11910499).The source provides a data set recording class, sex, age, and survival status for each person on board of the Titanic, and is based on data originally collected by the British Board of Trade and reprinted in:
+
+British Board of Trade (1990), *Report on the Loss of the 'Titanic' (S.S.)*. British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.
+
+### Examples
+
+    require(graphics)
+    mosaicplot(Titanic, main = "Survival on the Titanic")
+    ## Higher survival rates in children?
+    apply(Titanic, c(3, 4), sum)
+    ## Higher survival rates in females?
+    apply(Titanic, c(2, 4), sum)
+    ## Use loglm() in package 'MASS' for further analysis ...
+
+<https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Titanic.html>
+
+## R Studio Blog Details;
+
+## *GGplot*
+
+## 
+
+`ggplot2`{spellcheck="false"} is a `R`{spellcheck="false"} package dedicated to data visualization. It can greatly improve the quality and aesthetics of your graphics, and will make you much more efficient in creating them.\
+\
+`ggplot2`{spellcheck="false"} allows to build almost any type of chart. The R graph
+
+gallery focuses on it so almost every section there starts with `ggplot2`{spellcheck="false"}examples.\
+\
+This page is dedicated to general `ggplot2`{spellcheck="false"} tips that you can apply to any chart, like customizing a title, adding annotation, or using faceting.
+
+If you're new to `ggplot2`{spellcheck="false"}, a good starting point is probably this [online course](https://datacamp.pxf.io/za2ZAO).
+
+![](https://r-graph-gallery.com/img/other/ggplot2Hex.jpg)
+
+[Data Visualization](https://r-graph-gallery.com/ggplot2-package.html)
+
+## *Data Cleaning*
+
+**Data cleaning** refers to the process of transforming [raw data](https://www.statology.org/raw-data/) into data that is suitable for analysis or model-building.
+
+In most cases, "cleaning" a dataset involves dealing with missing values and duplicated data.
+
+Here are the most common ways to "clean" a dataset in R:
+
+**Method 1: Remove Rows with Missing Values**
+
+    library(dplyr)
+
+    #remove rows with any missing values
+    df %>% na.omit()
+
+**Method 2: Replace Missing Values with Another Value**
+
+    library(dplyr)
+    library(tidyr)
+
+    #replace missing values in each numeric column with median value of column
+    df %>% mutate(across(where(is.numeric), ~replace_na(., median(., na.rm=TRUE))))
+
+**Method 3: Remove Duplicate Rows**
+
+    library(dplyr)
+
+    df %>% distinct(.keep_all=TRUE)
+
+The following examples show how to use each of these methods in practice with the following data frame in R that contains information about various basketball players:
+
+    #create data frame
+    df <- data.frame(team=c('A', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'),
+                     points=c(4, 4, NA, 8, 6, 12, 14, 86, 13, 8),
+                     rebounds=c(9, 9, 7, 6, 8, NA, 9, 14, 12, 11),
+                     assists=c(2, 2, NA, 7, 6, 6, 9, 10, NA, 14))
+
+    #view data frame
+    df
+
+       team points rebounds assists
+    1     A      4        9       2
+    2     A      4        9       2
+    3     B     NA        7      NA
+    4     C      8        6       7
+    5     D      6        8       6
+    6     E     12       NA       6
+    7     F     14        9       9
+    8     G     86       14      10
+    9     H     13       12      NA
+    10    I      8       11      14
+
+[Data Cleaning](https://www.statology.org/data-cleaning-in-r/)
+
+## *Plotting multiple time series object*
+
+The plotting of a multiple time series object is straightforward. Let's load the `Coffee_Prices`{spellcheck="false"} an `mts`{spellcheck="false"} object that represents the monthly prices of the Robusta and Arabica coffee prices (USD per Kg.):
+
+    data("Coffee_Prices")
+
+    ts_info(Coffee_Prices)
+    #>  The Coffee_Prices series is a mts object with 2 variables and 701 observations
+    #>  Frequency: 12 
+    #>  Start time: 1960 1 
+    #>  End time: 2018 5
+
+    ts_plot(Coffee_Prices)
+
+![](images/paste-27CAA763.png)
+
+```{r}
+
+```
+
+By default, the function will plot all the series in one plot. Plotting the different series on a separate plot can be done by setting the `type`{spellcheck="false"} argument to `multiple`{spellcheck="false"}:
+
+    ts_plot(Coffee_Prices,
+            type = "multiple")
+
+246196019701980199020002010246
+
+Coffee_PricesRobustaArabica
+
+![](images/paste-DB6B668E.png)
+
+[Time Series Data](https://cran.rstudio.com/web/packages/TSstudio/vignettes/Plotting_Time_Series.html)
