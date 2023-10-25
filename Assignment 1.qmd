@@ -6,7 +6,7 @@ editor: visual
 
 ## Bengü Üzmez
 
-I'm Bengü Üzmez.
+![]()I'm Bengü Üzmez.
 
 I'm working at Hopi as Partnership Executive. I really into matchmaking for companies. I would move to new country soon so I want to create new opportunities with data science.
 
