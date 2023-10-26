@@ -2,92 +2,64 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "[STUDENT/GROUP NAME] Progress Journal",
+    "title": "BENGU UZMEZ Progress Journal",
     "section": "",
-    "text": "This progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
+    "text": "Introduction\n\nThis progress journal covers [STUDENT NAME SURNAME / PROJECT GROUP NAME]’s work during their term at BDA 503 Fall 2022.\nEach section is an assignment or an individual work."
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "assignment1.html",
-    "href": "assignment1.html",
-    "title": "1  Assignment 1",
-    "section": "",
-    "text": "set.seed(1)\nvec1 <- sample(LETTERS,5)\npaste0(vec1,collapse=\"\")\n\n[1] \"YDGAB\""
-  },
-  {
-    "objectID": "assignment1.html#bengü-üzmez",
-    "href": "assignment1.html#bengü-üzmez",
+    "objectID": "Assignment1.html#bengü-üzmez",
+    "href": "Assignment1.html#bengü-üzmez",
     "title": "1  Assignment1",
     "section": "1.1 Bengü Üzmez",
-    "text": "1.1 Bengü Üzmez\nHello, I'm Bengü Üzmez.\nI'm working at Hopi as Partnership Executive. I really into matchmaking for companies. I would move to new country soon so I want to create new opportunities with data science.\nIt's my Linkedin Profile, It would be great if you give me any tips about business.\nhttps://www.linkedin.com/in/benguzmez/\nhttps://quarto.org."
+    "text": "1.1 Bengü Üzmez\nHello, I’m Bengü Üzmez.\nI’m working at Hopi as Partnership Executive. I really into matchmaking for companies. I would move to new country soon so I want to create new opportunities with data science.\nIt’s my Linkedin Profile, It would be great if you give me any tips about business.\nhttps://www.linkedin.com/in/benguzmez/\nhttps://quarto.org."
   },
   {
-    "objectID": "assignment1.html#getting-started-with-shiny-for-python",
-    "href": "assignment1.html#getting-started-with-shiny-for-python",
+    "objectID": "Assignment1.html#getting-started-with-shiny-for-python",
+    "href": "Assignment1.html#getting-started-with-shiny-for-python",
     "title": "1  Assignment1",
     "section": "1.2 Getting Started with Shiny for Python",
-    "text": "1.2 Getting Started with Shiny for Python\nShiny makes it easy to build web applications with Python code. It enables you to customize the layout and style of your application and dynamically respond to events, such as a button press, or dropdown selection. The examples on this site are rendered in the browser using Pyodide, but you can also install shiny to use it with your own projects.\nIf you have experience with the Shiny for R, we recommend starting with the quickstart to learn the main differences between Shiny for R and Shiny for Python.\nShiny applications consist of two parts: the user interface (or UI), and the server function. These are combined using a shiny.App object.\nThis is shown in the interactive example below.\nfrom shiny import App, ui\n\n1.2.1 Adding UI inputs and output\nfrom shiny import App, ui\napp_ui = ui.page_fluid( ui.input_slider(\"n\", \"Choose a number n:\", 0, 100, 40), ui.output_text_verbatim(\"txt\") )\ndef server(input, output, session): …\napp = App(app_ui, server)\nNote the two new UI pieces added:\n\ninput_slider() creates a slider.\noutput_text_verbatim() creates a field to display dynamically generated text. There's no text yet, but we'll add it next.\n\nWith this code you can create a slider to choose number betwwen 40-100. Good option for making more creative.\nLink"
+    "text": "1.2 Getting Started with Shiny for Python\nShiny makes it easy to build web applications with Python code. It enables you to customize the layout and style of your application and dynamically respond to events, such as a button press, or dropdown selection. The examples on this site are rendered in the browser using Pyodide, but you can also install shiny to use it with your own projects.\nIf you have experience with the Shiny for R, we recommend starting with the quickstart to learn the main differences between Shiny for R and Shiny for Python.\nShiny applications consist of two parts: the user interface (or UI), and the server function. These are combined using a shiny.App object.\nThis is shown in the interactive example below.\nfrom shiny import App, ui\n\n1.2.1 Adding UI inputs and output\nfrom shiny import App, ui\napp_ui = ui.page_fluid( ui.input_slider(“n”, “Choose a number n:”, 0, 100, 40), ui.output_text_verbatim(“txt”) )\ndef server(input, output, session): …\napp = App(app_ui, server)\nNote the two new UI pieces added:\n\ninput_slider() creates a slider.\noutput_text_verbatim() creates a field to display dynamically generated text. There’s no text yet, but we’ll add it next.\n\nWith this code you can create a slider to choose number betwwen 40-100. Good option for making more creative.\nLink"
   },
   {
-    "objectID": "assignment1.html#survival-of-passengers-on-the-titanic",
-    "href": "assignment1.html#survival-of-passengers-on-the-titanic",
+    "objectID": "Assignment1.html#survival-of-passengers-on-the-titanic",
+    "href": "Assignment1.html#survival-of-passengers-on-the-titanic",
     "title": "1  Assignment1",
     "section": "1.3 Survival of passengers on the Titanic",
-    "text": "1.3 Survival of passengers on the Titanic\nTitanic is one of the great dataset for beginning the learn analyze skills. There are many category to analyze dataset. You can select data between spesific age and show with graph easily.I used to work on this data set before and I'm still recognize.\nThere are some quote from web:\n\n1.3.1 Description\nThis data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner 'Titanic', summarized according to economic status (class), sex, age and survival.\n\n\n1.3.2 Usage\nTitanic\n\n\n1.3.3 Format\nA 4-dimensional array resulting from cross-tabulating 2201 observations on 4 variables. The variables and their levels are as follows:\n\n\n\nNo \nName \nLevels\n\n\n\n\n1 \nClass \n1st, 2nd, 3rd, Crew\n\n\n2 \nSex \nMale, Female\n\n\n3 \nAge \nChild, Adult\n\n\n4 \nSurvived \nNo, Yes\n\n\n\nDue in particular to the very successful film 'Titanic', the last years saw a rise in public interest in the Titanic. Very detailed data about the passengers is now available on the Internet, at sites such as Encyclopedia Titanica (https://www.encyclopedia-titanica.org/).\n\n\n1.3.4 Source\nDawson, Robert J. MacG. (1995), The 'Unusual Episode' Data Revisited. Journal of Statistics Education, 3.doi:10.1080/10691898.1995.11910499.The source provides a data set recording class, sex, age, and survival status for each person on board of the Titanic, and is based on data originally collected by the British Board of Trade and reprinted in:\nBritish Board of Trade (1990), Report on the Loss of the 'Titanic' (S.S.). British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.\n\n\n1.3.5 Examples\nrequire(graphics)\nmosaicplot(Titanic, main = \"Survival on the Titanic\")\n## Higher survival rates in children?\napply(Titanic, c(3, 4), sum)\n## Higher survival rates in females?\napply(Titanic, c(2, 4), sum)\n## Use loglm() in package 'MASS' for further analysis ...\nhttps://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Titanic.html"
+    "text": "1.3 Survival of passengers on the Titanic\nTitanic is one of the great dataset for beginning the learn analyze skills. There are many category to analyze dataset. You can select data between spesific age and show with graph easily.I used to work on this data set before and I’m still recognize.\nThere are some quote from web:\n\n1.3.1 Description\nThis data set provides information on the fate of passengers on the fatal maiden voyage of the ocean liner ‘Titanic’, summarized according to economic status (class), sex, age and survival.\n\n\n1.3.2 Usage\nTitanic\n\n\n1.3.3 Format\nA 4-dimensional array resulting from cross-tabulating 2201 observations on 4 variables. The variables and their levels are as follows:\n\n\n\nNo \nName \nLevels\n\n\n\n\n1 \nClass \n1st, 2nd, 3rd, Crew\n\n\n2 \nSex \nMale, Female\n\n\n3 \nAge \nChild, Adult\n\n\n4 \nSurvived \nNo, Yes\n\n\n\nDue in particular to the very successful film ‘Titanic’, the last years saw a rise in public interest in the Titanic. Very detailed data about the passengers is now available on the Internet, at sites such as Encyclopedia Titanica (https://www.encyclopedia-titanica.org/).\n\n\n1.3.4 Source\nDawson, Robert J. MacG. (1995), The ‘Unusual Episode’ Data Revisited. Journal of Statistics Education, 3.doi:10.1080/10691898.1995.11910499.The source provides a data set recording class, sex, age, and survival status for each person on board of the Titanic, and is based on data originally collected by the British Board of Trade and reprinted in:\nBritish Board of Trade (1990), Report on the Loss of the ‘Titanic’ (S.S.). British Board of Trade Inquiry Report (reprint). Gloucester, UK: Allan Sutton Publishing.\n\n\n1.3.5 Examples\nrequire(graphics)\nmosaicplot(Titanic, main = \"Survival on the Titanic\")\n## Higher survival rates in children?\napply(Titanic, c(3, 4), sum)\n## Higher survival rates in females?\napply(Titanic, c(2, 4), sum)\n## Use loglm() in package 'MASS' for further analysis ...\nhttps://stat.ethz.ch/R-manual/R-devel/library/datasets/html/Titanic.html"
   },
   {
-    "objectID": "assignment1.html#r-studio-blog-details",
-    "href": "assignment1.html#r-studio-blog-details",
+    "objectID": "Assignment1.html#r-studio-blog-details",
+    "href": "Assignment1.html#r-studio-blog-details",
     "title": "1  Assignment1",
     "section": "1.4 R Studio Blog Details;",
     "text": "1.4 R Studio Blog Details;"
   },
   {
-    "objectID": "assignment1.html#ggplot",
-    "href": "assignment1.html#ggplot",
+    "objectID": "Assignment1.html#ggplot",
+    "href": "Assignment1.html#ggplot",
     "title": "1  Assignment1",
     "section": "1.5 GGplot",
     "text": "1.5 GGplot"
   },
   {
-    "objectID": "assignment1.html#section",
-    "href": "assignment1.html#section",
+    "objectID": "Assignment1.html#section",
+    "href": "Assignment1.html#section",
     "title": "1  Assignment1",
     "section": "1.6 ",
-    "text": "1.6 \nggplot2 is a R package dedicated to data visualization. It can greatly improve the quality and aesthetics of your graphics, and will make you much more efficient in creating them.\n\nggplot2 allows to build almost any type of chart. The R graph\ngallery focuses on it so almost every section there starts with ggplot2examples.\n\nThis page is dedicated to general ggplot2 tips that you can apply to any chart, like customizing a title, adding annotation, or using faceting.\nIf you're new to ggplot2, a good starting point is probably this online course.\n\nData Visualization"
+    "text": "1.6 \nggplot2 is a R package dedicated to data visualization. It can greatly improve the quality and aesthetics of your graphics, and will make you much more efficient in creating them.\n\nggplot2 allows to build almost any type of chart. The R graph\ngallery focuses on it so almost every section there starts with ggplot2examples.\n\nThis page is dedicated to general ggplot2 tips that you can apply to any chart, like customizing a title, adding annotation, or using faceting.\nIf you’re new to ggplot2, a good starting point is probably this online course.\n\nData Visualization"
   },
   {
-    "objectID": "assignment1.html#data-cleaning",
-    "href": "assignment1.html#data-cleaning",
+    "objectID": "Assignment1.html#data-cleaning",
+    "href": "Assignment1.html#data-cleaning",
     "title": "1  Assignment1",
     "section": "1.7 Data Cleaning",
-    "text": "1.7 Data Cleaning\nData cleaning refers to the process of transforming raw data into data that is suitable for analysis or model-building.\nIn most cases, \"cleaning\" a dataset involves dealing with missing values and duplicated data.\nHere are the most common ways to \"clean\" a dataset in R:\nMethod 1: Remove Rows with Missing Values\nlibrary(dplyr)\n\n#remove rows with any missing values\ndf %&gt;% na.omit()\nMethod 2: Replace Missing Values with Another Value\nlibrary(dplyr)\nlibrary(tidyr)\n\n#replace missing values in each numeric column with median value of column\ndf %&gt;% mutate(across(where(is.numeric), ~replace_na(., median(., na.rm=TRUE))))\nMethod 3: Remove Duplicate Rows\nlibrary(dplyr)\n\ndf %&gt;% distinct(.keep_all=TRUE)\nThe following examples show how to use each of these methods in practice with the following data frame in R that contains information about various basketball players:\n#create data frame\ndf &lt;- data.frame(team=c('A', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'),\n                 points=c(4, 4, NA, 8, 6, 12, 14, 86, 13, 8),\n                 rebounds=c(9, 9, 7, 6, 8, NA, 9, 14, 12, 11),\n                 assists=c(2, 2, NA, 7, 6, 6, 9, 10, NA, 14))\n\n#view data frame\ndf\n\n   team points rebounds assists\n1     A      4        9       2\n2     A      4        9       2\n3     B     NA        7      NA\n4     C      8        6       7\n5     D      6        8       6\n6     E     12       NA       6\n7     F     14        9       9\n8     G     86       14      10\n9     H     13       12      NA\n10    I      8       11      14\nData Cleaning"
+    "text": "1.7 Data Cleaning\nData cleaning refers to the process of transforming raw data into data that is suitable for analysis or model-building.\nIn most cases, “cleaning” a dataset involves dealing with missing values and duplicated data.\nHere are the most common ways to “clean” a dataset in R:\nMethod 1: Remove Rows with Missing Values\nlibrary(dplyr)\n\n#remove rows with any missing values\ndf %&gt;% na.omit()\nMethod 2: Replace Missing Values with Another Value\nlibrary(dplyr)\nlibrary(tidyr)\n\n#replace missing values in each numeric column with median value of column\ndf %&gt;% mutate(across(where(is.numeric), ~replace_na(., median(., na.rm=TRUE))))\nMethod 3: Remove Duplicate Rows\nlibrary(dplyr)\n\ndf %&gt;% distinct(.keep_all=TRUE)\nThe following examples show how to use each of these methods in practice with the following data frame in R that contains information about various basketball players:\n#create data frame\ndf &lt;- data.frame(team=c('A', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'),\n                 points=c(4, 4, NA, 8, 6, 12, 14, 86, 13, 8),\n                 rebounds=c(9, 9, 7, 6, 8, NA, 9, 14, 12, 11),\n                 assists=c(2, 2, NA, 7, 6, 6, 9, 10, NA, 14))\n\n#view data frame\ndf\n\n   team points rebounds assists\n1     A      4        9       2\n2     A      4        9       2\n3     B     NA        7      NA\n4     C      8        6       7\n5     D      6        8       6\n6     E     12       NA       6\n7     F     14        9       9\n8     G     86       14      10\n9     H     13       12      NA\n10    I      8       11      14\nData Cleaning"
   },
   {
-    "objectID": "assignment1.html#plotting-multiple-time-series-object",
-    "href": "assignment1.html#plotting-multiple-time-series-object",
+    "objectID": "Assignment1.html#plotting-multiple-time-series-object",
+    "href": "Assignment1.html#plotting-multiple-time-series-object",
     "title": "1  Assignment1",
     "section": "1.8 Plotting multiple time series object",
-    "text": "1.8 Plotting multiple time series object\nThe plotting of a multiple time series object is straightforward. Let's load the Coffee_Prices an mts object that represents the monthly prices of the Robusta and Arabica coffee prices (USD per Kg.):\ndata(\"Coffee_Prices\")\n\nts_info(Coffee_Prices)\n#&gt;  The Coffee_Prices series is a mts object with 2 variables and 701 observations\n#&gt;  Frequency: 12 \n#&gt;  Start time: 1960 1 \n#&gt;  End time: 2018 5\n\nts_plot(Coffee_Prices)\n\nBy default, the function will plot all the series in one plot. Plotting the different series on a separate plot can be done by setting the type argument to multiple:\nts_plot(Coffee_Prices,\n        type = \"multiple\")\n246196019701980199020002010246\nCoffee_PricesRobusta Arabica\n\nTime Series Data\nThank You!"
+    "text": "1.8 Plotting multiple time series object\nThe plotting of a multiple time series object is straightforward. Let’s load the Coffee_Prices an mts object that represents the monthly prices of the Robusta and Arabica coffee prices (USD per Kg.):\ndata(\"Coffee_Prices\")\n\nts_info(Coffee_Prices)\n#&gt;  The Coffee_Prices series is a mts object with 2 variables and 701 observations\n#&gt;  Frequency: 12 \n#&gt;  Start time: 1960 1 \n#&gt;  End time: 2018 5\n\nts_plot(Coffee_Prices)\n\nBy default, the function will plot all the series in one plot. Plotting the different series on a separate plot can be done by setting the type argument to multiple:\nts_plot(Coffee_Prices,\n        type = \"multiple\")\n246196019701980199020002010246\nCoffee_PricesRobusta Arabica\n\nTime Series Data\nThank You!"
   }
 ]
